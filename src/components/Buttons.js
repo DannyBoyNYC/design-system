@@ -54,26 +54,6 @@ const BUTTON_MODIFIERS = {
   secondaryButtonError: () => `
     border: 2px solid ${defaultTheme.status.warningColor};
   `,
-  error: () => `
-    background: none;
-    color: ${defaultTheme.status.errorColor};
-    &:hover, &:focus {
-      background-color: ${defaultTheme.status.errorColorHover};
-      outline: 3px solid ${defaultTheme.status.errorColorHover};
-      outline-offset: 2px;
-      border: 2px solid transparent;
-    }
-    &:active {
-      background-color: ${defaultTheme.status.errorColorActive};
-    }
-  `,
-  primaryButtonError: () => `
-    background-color: ${defaultTheme.status.errorColor};
-    color: ${defaultTheme.textColorInverted};
-  `,
-  secondaryButtonError: () => `
-    border: 2px solid ${defaultTheme.status.warningColor};
-  `,
   success: () => `
     background: none;
     color: ${defaultTheme.status.successColor};
