@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { defaultTheme, typeScale } from '../utils';
-import { applyStyleModifiers } from 'styled-components-modifiers';
+import styled from "styled-components";
+import { defaultTheme, typeScale } from "../utils";
+import { applyStyleModifiers } from "styled-components-modifiers";
 
 const BUTTON_MODIFIERS = {
   small: () => `
@@ -11,14 +11,13 @@ const BUTTON_MODIFIERS = {
     font-size: ${typeScale.header5};
     padding: 16px 24px;
   `,
-
-  warning: () => `
+  warning: ({ props }) => `
     background-color: ${defaultTheme.status.warningColor};
     color: ${defaultTheme.textColorInverted};
     &:hover, &:focus {
       background-color: ${defaultTheme.status.warningColorHover};
       outline: 3px solid ${defaultTheme.status.warningColorHover};
-      // outline-offset: 2px;
+      outline-offset: 2px;
       border: 2px solid transparent;
     }
 
