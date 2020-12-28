@@ -1,7 +1,7 @@
 import styled from "styled-components";
-// https://www.freecodecamp.org/news/visual-variants-for-react-components-with-styled-components-dfaff6a76273/
+
 export const ButtonBase = styled.button`
-  background: #fff;
+  background-color: #fff;
   color: #333;
   font-size: 1em;
   margin: 1em;

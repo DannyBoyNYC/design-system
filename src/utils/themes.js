@@ -1,16 +1,17 @@
-import { blue, neutral, yellow, green, red } from './colors';
-import { primaryFont } from './typography';
+import { blue, neutral, yellow, green, red } from "./colors";
+import { funnyFont, serifFont } from "./typography"; // primaryFont,
 
 export const defaultTheme = {
+  aanchor: "default",
   primaryColor: blue[300],
-  primaryHoverColor: blue[200],
+  primaryHoverColor: red[100],
   primaryActiveColor: blue[100],
   textColorOnPrimary: neutral[100],
   textColor: neutral[600],
   textColorInverted: neutral[100],
-  disabled: neutral[400],
+  disabled: neutral[400], //   400: '#737581',
   textOnDisabled: neutral[300],
-  primaryFont,
+  primaryFont: funnyFont,
   status: {
     warningColor: yellow[100],
     warningColorHover: yellow[200],
@@ -25,14 +26,15 @@ export const defaultTheme = {
 };
 
 export const darkTheme = {
+  aanchor: "dark",
   primaryColor: neutral[100],
   primaryHoverColor: neutral[200],
   primaryActiveColor: neutral[300],
   textColorOnPrimary: blue[300],
   textColor: blue[300],
   textColorInverted: neutral[100],
-  primaryFont: primaryFont,
-  disabled: neutral[400],
+  primaryFont: serifFont,
+  disabled: neutral[400], // "#737581"
   textOnDisabled: neutral[300],
   status: {
     warningColor: yellow[100],
